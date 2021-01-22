@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="gTV-IL-0wX" customClass="categoryCell" customModule="FitKitAdmin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="aerial_2" translatesAutoresizingMaskIntoConstraints="NO" id="EUr-RV-0oE">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="161.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cateogry Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q6M-Fm-wD9">
+                        <rect key="frame" x="8" y="169.5" width="134" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                        <color key="textColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Q6M-Fm-wD9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="PD6-JL-Yai"/>
+                <constraint firstItem="EUr-RV-0oE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RlE-Nt-DCf"/>
+                <constraint firstAttribute="trailing" secondItem="Q6M-Fm-wD9" secondAttribute="trailing" constant="8" id="XDc-vo-2PM"/>
+                <constraint firstAttribute="trailing" secondItem="EUr-RV-0oE" secondAttribute="trailing" id="bHw-OI-EIG"/>
+                <constraint firstItem="Q6M-Fm-wD9" firstAttribute="top" secondItem="EUr-RV-0oE" secondAttribute="bottom" constant="8" id="eS7-wE-ARl"/>
+                <constraint firstItem="EUr-RV-0oE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ogb-hv-hNW"/>
+                <constraint firstAttribute="bottom" secondItem="Q6M-Fm-wD9" secondAttribute="bottom" constant="8" id="tB7-Jh-5Vm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="184" height="264"/>
+            <connections>
+                <outlet property="categoryImage" destination="EUr-RV-0oE" id="iQH-OC-WnQ"/>
+                <outlet property="categoryLabel" destination="Q6M-Fm-wD9" id="s3H-6k-ppS"/>
+            </connections>
+            <point key="canvasLocation" x="234.78260869565219" y="70.3125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="aerial_2" width="1000" height="1778"/>
+    </resources>
+</document>
